@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  /* background-image: url("../../image/明日方舟终末地.jpg"); */
+  background: linear-gradient(to bottom, #000000 0%, #434343 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: url(../../image/mouse.png) 3 3 auto;
+  flex-direction: column;
+  display: flex;
+}
+@font-face {
+  font-family: Title_black;
+  src: url(/font/优设标题黑_猫啃网.ttf);
+}
+.container {
+  position: relative;
+  /* top: 10vh; */
+  /* left: 50vw; */
+  left: 50%;
+  /* overflow: hidden; */
+}
+canvas#canvas {
+  position: absolute;
+  /* top: 10vh;
+  left: 50vw; */
+}
+
+header {
+  line-height: 10rem;
+  height: 10vh;
+}
+header .logo {
+  margin-left: 50px;
+  height: 100px;
+}
+header .logo .tr_logo,
+header .logo .title_logo {
+  height: 50px;
+  filter: drop-shadow(2px 4px 8px #8eb1c4);
+}
+main h1 {
+  color: #fff;
+  margin-left: 100px;
+  margin-top: 500px;
+  font-size: 72px;
+  font-family: "Title_black";
+  filter: drop-shadow(2px 5px 12px #92b9c0);
+}
+footer {
+  /* line-height: 10vh; */
+  height: 15rem;
+  color: #fff;
+  margin-top: auto;
+}
+.footer .QRcode {
+  margin-left: 7rem;
+  width: 10rem;
+}
+.footer .QRcode .qrcode {
+  display: inline-block;
+  height: 10rem;
+}
+.footer .QRcode p {
+  /* display: block; */
+  text-align: center;
+}
